@@ -19,7 +19,7 @@ COPY ssh_setup.sh /tmp
 RUN chmod +x /tmp/ssh_setup.sh \
     && (sleep 1;/tmp/ssh_setup.sh 2>&1 > /dev/null)
     
-CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+#CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 
 CMD ["./script.sh"]
 
